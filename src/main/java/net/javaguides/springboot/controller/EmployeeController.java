@@ -61,6 +61,8 @@ public class EmployeeController {
 		employee.setJobId(employeeDetails.getJobId());
 		employee.setESalary(employeeDetails.getESalary());
 		employee.setHireDate(employeeDetails.getHireDate());
+		employee.setDeptId(employeeDetails.getDeptId());
+		employee.setPhnNum(employeeDetails.getPhnNum());
 		Employee updatedEmployee = employeeRepository.save(employee);
 		return ResponseEntity.ok(updatedEmployee);
 	}
