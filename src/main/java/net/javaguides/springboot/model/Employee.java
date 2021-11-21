@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
 @Table(name = "employees")
@@ -25,17 +26,23 @@ public class Employee {
 	private String emailId;
 	@Column(name = "job_id")
 	private String jobId;
+	@Column(name = "e_salary")
+	private int eSalary;
+	@Column(name = "hire_date")
+	private Date hireDate;
 	
 	public Employee() {
 		
 	}
 	
-	public Employee(String firstName, String lastName, String emailId, String jobId) {
+	public Employee(String firstName, String lastName, String emailId, String jobId,int eSalary, Date hireDate) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailId = emailId;
 		this.jobId = jobId;
+		this.eSalary = eSalary;
+		this.hireDate = hireDate;
 	}
 	public long getId() {
 		return id;
@@ -64,7 +71,10 @@ public class Employee {
 	public String getJobId() {
 		return jobId;
 	}
-	public void setJobId(String jobId) {
-		this.jobId = jobId;
-	}
+	public void setJobId(String jobId) {this.jobId = jobId; }
+	public int getESalary() {return eSalary; }
+	public void setESalary(int eSalary) {this.eSalary = eSalary; }
+	public Date getHireDate(){ return hireDate; }
+	public void setHireDate(Date hireDate){this.hireDate=hireDate; }
+
 }
