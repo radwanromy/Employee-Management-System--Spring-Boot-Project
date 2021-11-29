@@ -85,3 +85,47 @@ public class EmployeeController {
 }
 
 
+/* // 20211129164034
+// http://localhost:9000/api/v1/employees
+
+[
+  {
+    "id": 1,
+    "firstName": "Radwan",
+    "lastName": "Romy",
+    "emailId": "radwanromy@gmail.com",
+    "jobId": "SE",
+    "hireDate": "1998-06-09T18:00:00.000+00:00",
+    "deptId": "CSE",
+    "phnNum": "+8801717799111",
+    "addInfo": "Dhaka,Bangladesh",
+    "postCode": 1216,
+    "esalary": 10000
+  },
+  {
+    "id": 2,
+    "firstName": "Leo",
+    "lastName": "Messi",
+    "emailId": "leomessi@fcb.com",
+    "jobId": "PLAYER",
+    "hireDate": "0999-12-31T18:00:00.000+00:00",
+    "deptId": "FCB",
+    "phnNum": "+800-916-6008",
+    "addInfo": "Paris, France",
+    "postCode": 9877,
+    "esalary": 700000000
+  },
+  {
+    "id": 3,
+    "firstName": "Ansu",
+    "lastName": "Fati",
+    "emailId": "Ansufati@fcb.com ",
+    "jobId": "PLAYER",
+    "hireDate": "0999-12-31T18:00:00.000+00:00",
+    "deptId": "FCB",
+    "phnNum": "+800-916-54964",
+    "addInfo": "Barcelona, Spain",
+    "postCode": 8546,
+    "esalary": 100000000
+  }
+] */
