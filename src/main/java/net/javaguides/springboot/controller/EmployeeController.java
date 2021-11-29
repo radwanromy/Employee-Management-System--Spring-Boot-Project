@@ -64,6 +64,7 @@ public class EmployeeController {
 		employee.setDeptId(employeeDetails.getDeptId());
 		employee.setPhnNum(employeeDetails.getPhnNum());
 		employee.setAddInfo(employeeDetails.getAddInfo());
+		employee.setPostCode(employeeDetails.getPostCode());
 		Employee updatedEmployee = employeeRepository.save(employee);
 		return ResponseEntity.ok(updatedEmployee);
 	}
@@ -82,3 +83,5 @@ public class EmployeeController {
 	
 	
 }
+
+

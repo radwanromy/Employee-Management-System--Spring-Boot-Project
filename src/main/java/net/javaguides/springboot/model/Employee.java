@@ -43,9 +43,12 @@ public class Employee {
 	@Column(name = "add_info")
 	private String addInfo;
 
+	@Column(name = "post_code")
+	private int postCode;
+
 	public Employee() {
 	}
-	public Employee(String firstName, String lastName, String emailId, String jobId,int eSalary, Date hireDate, String deptId, String phnNum, String addInfo) {
+	public Employee(String firstName, String lastName, String emailId, String jobId,int eSalary, Date hireDate, String deptId, String phnNum, String addInfo,int postCode) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -56,60 +59,55 @@ public class Employee {
 		this.deptId = deptId;
 		this.phnNum = phnNum;
 		this.addInfo = addInfo;
+		this.postCode= postCode;
 	}
-
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-
 	public String getFirstName() {
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
 	public String getLastName() {
 		return lastName;
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
 	public String getEmailId() {
 		return emailId;
 	}
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-
 	public String getJobId() {
 		return jobId;
 	}
 	public void setJobId(String jobId) {this.jobId = jobId; }
-
 	public int getESalary() {return eSalary; }
 	public void setESalary(int eSalary) {this.eSalary = eSalary; }
-
 	public Date getHireDate(){ return hireDate; }
 	public void setHireDate(Date hireDate){this.hireDate=hireDate; }
-
 	public String getDeptId() {
 		return deptId;
 	}
 	public void setDeptId(String deptId) {this.deptId = deptId; }
-
 	public String getPhnNum() {
 		return phnNum;
 	}
 	public void setPhnNum(String phnNum) {this.phnNum = phnNum; }
-
 	public String getAddInfo() {
 		return addInfo;
 	}
 	public void setAddInfo(String addInfo) {this.addInfo = addInfo; }
+	public int getPostCode() {
+		return postCode;
+	}
+	public void setPostCode(int postCode) {this.postCode = postCode; }
 
 }
