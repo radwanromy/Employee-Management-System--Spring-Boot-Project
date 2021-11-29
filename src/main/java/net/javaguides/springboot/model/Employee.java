@@ -39,9 +39,13 @@ public class Employee {
 
 	@Column(name = "phn_num")
 	private String phnNum;
+
+	@Column(name = "add_info")
+	private String addInfo;
+
 	public Employee() {
 	}
-	public Employee(String firstName, String lastName, String emailId, String jobId,int eSalary, Date hireDate, String deptId, String phnNum) {
+	public Employee(String firstName, String lastName, String emailId, String jobId,int eSalary, Date hireDate, String deptId, String phnNum, String addInfo) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -51,6 +55,7 @@ public class Employee {
 		this.hireDate = hireDate;
 		this.deptId = deptId;
 		this.phnNum = phnNum;
+		this.addInfo = addInfo;
 	}
 
 	public long getId() {
@@ -101,5 +106,10 @@ public class Employee {
 		return phnNum;
 	}
 	public void setPhnNum(String phnNum) {this.phnNum = phnNum; }
+
+	public String getAddInfo() {
+		return addInfo;
+	}
+	public void setAddInfo(String addInfo) {this.addInfo = addInfo; }
 
 }
